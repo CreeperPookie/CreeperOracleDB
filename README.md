@@ -1,2 +1,2 @@
 # Soda
-A simple mod/plugin API to manage the Oracle SODA database API!
+A simple mod/plugin API to manage Oracle databases!

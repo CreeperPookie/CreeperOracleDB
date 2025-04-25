@@ -1,0 +1,17 @@
+# The raw TNS connection string, usually provided in the tnsnames.ora file in the database wallet from Oracle; for example:
+# (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=<root domain>))(connect_data=(service_name=<service name>))(security=(ssl_server_dn_match=yes)))
+# where <root domain> is the root domain of the database server and <service name> is the service name/service URL of the database server.
+# Don't include the initial name assignment (i.e. database_high = ...) in the TNS connection string!
+tns-connection-string: (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=127.0.0.1))(connect_data=(service_name=127.0.0.1))(security=(ssl_server_dn_match=yes)))
+
+# The base database server username to connect to
+database-username: minecraft_server
+
+# The base database server password to connect to
+database-password: password
+
+# The base table name to run operations on
+table-name: minecraft-server
+
+# Whether to automatically attempt to create the table on server startup
+create-table: true

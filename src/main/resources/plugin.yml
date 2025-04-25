@@ -1,0 +1,16 @@
+name: '${name}'
+version: '${version}'
+main: creeperpookie.creeperoracledbplugin.CreeperOracleDBPlugin
+api-version: '1.21'
+prefix: '${plugin_id}'
+load: STARTUP
+authors: [ '${author}' ]
+description: '${description}'
+website: '${website}'
+commands:
+    ${plugin_id}:
+        description: '${name} plugin command'
+        usage: '/${plugin_id} reload'
+        aliases: [ "oracledb", "oracle", "codb", "cdb" ]
+        permission: ${plugin_id}.command
+        permission-message: 'You do not have permission to use this command!'
